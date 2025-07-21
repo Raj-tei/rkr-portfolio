@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+ <meta name="google-site-verification" content="QYIHHoPObSrjmB_o2THHCC88irqTL5V8Rq-w4J7pNQ4" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raj Kamal Raj | Software Analyst</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+<!-- Favicons -->
+<link rel="icon" href="/favicon.ico" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png?v=1" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta name="theme-color" content="#1c1f2b" />
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Raj Kamal Raj",
+  "jobTitle": "Software Analyst / SDET",
+  "url": "https://rajkamalraj.in/",
+  "image": "https://rajkamalraj.in/profile.jpg",
+  "description": "Raj Kamal Raj is a Software Analyst with nearly 6 years of experience in Automation Testing, Java, Selenium, and ETL Testing. Proficient in designing frameworks and leading QA efforts across domains like Insurance, E-commerce, and Telecom.",
+  "sameAs": [
+    "https://linkedin.com/in/raj-kamal-raj-",
+    "mailto:rajkamalraj1996@gmail.com"
+  ],
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Karunya University, Coimbatore",
+    "sameAs": "https://www.karunya.edu/"
+  },
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Accenture",
+    "sameAs": "https://www.accenture.com/"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Gurugram",
+    "addressRegion": "Haryana",
+    "postalCode": "122015",
+    "addressCountry": "IN"
+  },
+  "knowsAbout": [
+    "Selenium",
+    "Java",
+    "Python",
+    "Karate",
+    "ETL Testing",
+    "BDD",
+    "Jenkins",
+    "Agile",
+    "JIRA",
+    "SQL"
+  ]
+}
+
+</script>
+
+
+  <style>
+  #loader-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .loader {
+    width: 50px;
+    height: 50px;
+    border: 6px solid #ccc;
+    border-top: 6px solid #6a1b9a;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  body.loaded #loader-wrapper {
+    display: none;
+  }
+</style>
+
+</head>
+<body>
+  <div id="loader-wrapper">
+  <div class="loader"></div>
+</div>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+  async function submitForm(form) {
+    const formData = new FormData(form);
+    try {
+      await fetch(form.action, { method: "POST", body: formData, headers: { Accept: "application/json" } });
+      form.reset();
+      document.getElementById("success-message").style.display = "block";
+    } catch { alert("There was an error. Please try again."); }
+  }
+  function toggleMenu() {
+    document.getElementById('navLinks').classList.toggle('show');
+  }
+  function closeMenu() {
+    document.getElementById('navLinks').classList.remove('show');
+  }
+</script>
+<div class="top-bar">
+
+  <div class="icons">
+    <a href="mailto:rajkamalraj1996@gmail.com"><i class="fa-solid fa-envelope"></i> </a>
+    <a href="https://github.com/Raj-tei" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/raj-kamal-raj/" target="_blank"><i class="fab fa-linkedin"></i></a>
+  </div>
+</div>
+<nav class="navbar">
+  <h1 class="logo">RKR.</h1>
+  <button class="menu-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home" class="active" onclick="closeMenu()">Home</a></li>
+    <li><a href="#about" onclick="closeMenu()">About</a></li>
+    <li><a href="#tech" onclick="closeMenu()">Tech Stack</a></li>
+    <li><a href="#experience" onclick="closeMenu()">Experience</a></li>
+    <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+    <li><a href="#certifications" onclick="closeMenu()">Certifications</a></li>
+
+    <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+    <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+  </ul>
+</nav>
+<header class="hero-banner" id="home">
+  <div class="hero-text" data-aos="fade-up">
+    <h2>Hi!</h2>
+    <img src="/rhr.jpeg" alt="Raj Hansh Raj" class="hero-img" />
+  <h1>I'm Raj Kamal Raj!</h1>
+<p>💼 Software Analyst | SDET | Automation Enthusiast | Testing with DevOps & AI</p>
+
+    <a href="#about" class="cta-button">Here's More!</a>
+    <a href="https://drive.google.com/file/d/14FlZ6kku0idqZhlDxYLiopAPgQC-PzJE/view?usp=drivesdk" class="cta-button" download>📄 Download Resume</a>
+  </div>
+</header>
+<section class="card" id="about" data-aos="fade-up">
+  <h2>
+  <i class="fa-solid fa-user" style="color: #ffb347; margin-right: 8px;"></i>
+  About Me
+</h2>
+
+  <p>With almost 6 years of diverse experience in Software Development, Automation
+Testing using Java and selenium, I excel in coordinating offshore teams while
+demonstrating expertise in Agile and Waterfall methodologies. Skilled in managing
+Kanban dashboards, I ensure seamless project progression. Hands-on experience
+across Insurance, Financial Services, Telecom, E-commerce and Product
+domains. Additionally, my commitment to continuous learning extends to exploring
+Prompt Engineering for Testers ,DevOps & CI/CD & Test Automation Frameworks
+with AI.
+</p>
+</section>
+<section class="card" id="tech" data-aos="fade-up">
+  <h2>
+    <i class="fa-solid fa-laptop-code" style="color: #ffb347; margin-right: 8px;"></i>
+    Tech Stack
+  </h2>
+
+  <div class="tech-grid">
+    <img src="https://img.icons8.com/color/48/java-coffee-cup-logo.png" alt="Java" title="Java" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Postman-icon.png" alt="Postman" title="Postman" style="width: 48px; height: 48px;" />
+    <img src="https://img.icons8.com/fluency/48/selenium-test-automation.png" alt="Selenium" title="Selenium" />
+    <img src="https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg" alt="Jenkins" title="Jenkins" style="width: 48px; height: 48px;" />
+    <img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/external-karate-open-source-framework-that-combines-api-test-automation-logo-color-tal-revivo.png" alt="Karate" title="Karate" />
+    <img src="https://cdn.worldvectorlogo.com/logos/jira-1.svg" alt="JIRA" title="JIRA" style="width: 48px; height: 48px;" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Robot-framework-logo.png" alt="Robot Framework" title="Robot Framework" style="width: 48px; height: 48px;" />
+  </div>
+</section>
+
+<style>
+  .tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(48px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 15px;
+  }
+
+  .tech-grid img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 6px;
+    background: white;
+    padding: 6px;
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+  }
+
+  .tech-grid img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  }
+</style>
+<section class="card" id="experience" data-aos="fade-up">
+  <h2>
+    <i class="fa-solid fa-briefcase" style="color: #ffb347; margin-right: 8px;"></i>
+    Experience
+  </h2>
+
+  
+
+  <h3>Accenture – Software Analyst</h3>
+  <p>Dec 2022 – Present | Gurugram, India</p>
+  <ul>
+    <li>Built automation frameworks using Java (Karate BlackBelt, Selenium, Robot Framework).</li>
+    <li>Led automation efforts, improving testing efficiency by 30%.</li>
+    <li>Tested API endpoints with Postman; CI/CD with Jenkins; collaborated using GitHub & Jira.</li>
+    <li>Integrated Selenium tests with TestNG and implemented regression pipelines.</li>
+  </ul>
+
+  <h3>Accenture – Associate Software Engineer</h3>
+  <p>May 2019 – Dec 2022 | Gurugram, India</p>
+  <ul>
+    <li>Developed automated regression tests using Java + Selenium.</li>
+    <li>Executed ETL testing for large-scale data warehouses using Informatica and SQL.</li>
+    <li>Used HP-ALM and JIRA for test management and issue tracking.</li>
+  </ul>
+</section>
+<section class="card" id="projects" data-aos="fade-up">
+  <h2>
+    <i class="fa-solid fa-diagram-project" style="color: #ffb347; margin-right: 8px;"></i>
+    Projects
+  </h2>
+
+  <ul>
+    <li><strong>Karate Automation Framework</strong><br>
+      Developed a modular API testing framework using Karate DSL and Java, integrated with Jenkins for nightly runs and GitHub for version control. Reduced test maintenance time and improved coverage for REST APIs.
+    </li>
+
+    <li><strong>ETL Testing Suite</strong><br>
+      Designed a reusable ETL testing framework using SQL and Python for validating data pipelines in Informatica. Enabled schema validation, row-level checks, and automated data completeness reports.
+    </li>
+
+    <li><strong>Robot Framework Regression System</strong><br>
+      Built a cross-platform regression test suite using Robot Framework with Selenium and Python libraries. Integrated with CI/CD (Jenkins) for automated browser testing and defect reporting via JIRA.
+    </li>
+
+  </ul>
+</section>
+
+
+
+
+<section class="card" id="skills" data-aos="fade-up">
+  <h2>
+    <i class="fa-solid fa-screwdriver-wrench" style="color: #ffb347; margin-right: 8px;"></i>
+    Skills
+  </h2>
+
+  <div class="skill-category">
+    <h3>Automation & QA Tools</h3>
+    <span class="skill-tag">Selenium</span>
+    <span class="skill-tag">Karate</span>
+    <span class="skill-tag">Jenkins</span>
+    <span class="skill-tag">Robot Framework</span>
+    <span class="skill-tag">JIRA</span>
+    <span class="skill-tag">BDD</span>
+    <span class="skill-tag">ALM</span>
+    <span class="skill-tag">TestNG</span>
+    <span class="skill-tag">Postman</span>
+    <span class="skill-tag">ETL Testing</span>
+  </div>
+</section>
+
+
+<section class="card contact" id="contact" data-aos="fade-up">
+ <h2>
+  <i class="fa-solid fa-address-book" style="color: #ffb347; margin-right: 8px;"></i>
+  Contact Me
+</h2>
+<p>
+  <i class="fas fa-envelope" style="color: #ffb347; margin-right: 8px;"></i>
+  Available for freelance, collaborations, and full-time roles.
+</p>
+
+
+  <!-- <p>🕓 Local Time: <span id="localTime"></span></p>
+<script>
+  function updateClock() {
+    document.getElementById("localTime").textContent = new Date().toLocaleTimeString([], {
+      hour: '2-digit',
+      minute: '2-digit',
+      hour12: true
+    });
+  }
+  updateClock();
+  setInterval(updateClock, 60000); // updates every minute
+</script> -->
+
+  <form class="contact-form" action="https://formspree.io/f/xovwzgqq" method="POST" onsubmit="event.preventDefault(); submitForm(this);">
+    <div class="input-group">
+  <label for="name">
+    <i class="fas fa-user" style="color:#ffb347; margin-right: 6px;"></i> Name
+  </label>
+  <input type="text" name="name" id="name" required />
+</div>
+
+<div class="input-group">
+  <label for="email">
+    <i class="fas fa-envelope" style="color:#ffb347; margin-right: 6px;"></i> Email
+  </label>
+  <input type="email" name="email" id="email" required />
+</div>
+
+<div class="input-group">
+  <label for="message">
+    <i class="fas fa-comment-dots" style="color:#ffb347; margin-right: 6px;"></i> Message
+  </label>
+  <textarea name="message" id="message" rows="5" required></textarea>
+</div>
+
+<button type="submit" class="glow-button">
+  <i class="fas fa-paper-plane" style="color:#ffffff; margin-right: 6px;"></i> Send Message
+</button>
+
+  </form>
+  <p id="success-message" class="success-message">✅ Your message was sent successfully!</p>
+  <!-- <a href="https://wa.me/+916205385629" class="whatsapp-button" target="_blank"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a> -->
+</section>
+<a href="https://wa.me/+919263796669" class="floating-wa" target="_blank"><i class="fab fa-whatsapp"></i></a>
+<footer>
+  <p>© 2025 Raj Kamal Raj</p>
+</footer>
+<script>
+  // ScrollSpy Highlight
+  window.addEventListener('scroll', () => {
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    let current = '';
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop - 100;
+      if (pageYOffset >= sectionTop) {
+        current = section.getAttribute('id');
+      }
+    });
+    navLinks.forEach((link) => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === `#${current}`) {
+        link.classList.add('active');
+      }
+    });
+  });
+</script>
+<script>
+  window.addEventListener("load", function () {
+    document.body.classList.add("loaded");
+  });
+</script>
+<button onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+  id="backToTopBtn"
+  title="Go to top"
+  style="
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 999;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 55%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  ">
+  ↑
+</button>
+
+<script>
+  const backToTopBtn = document.getElementById("backToTopBtn");
+
+  window.onscroll = function () {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      backToTopBtn.style.display = "block";
+    } else {
+      backToTopBtn.style.display = "none";
+    }
+  };
+</script>
+
+
+</body>
+</html>
